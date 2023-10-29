@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript/CRUD.OPERATION</title>
+    <!--Bootstrap Css Link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Animate.css Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Sweetalert Link -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="text-md-center fw-semibold p-4">JAVASCRIPT CRUD OPERATION</h1>
+        <div class="row">
+            <div class="col-md-12 shadow-lg p-4">
+                <div>
+                    <div>
+                        <h5 class="text-lg-center">Employee Record List</h5>
+                    </div>
+                    <div class="d-flex w-100 justify-content-end align-items-center">
+                        <button class="btn btn-outline-light p-0 m-0 m-lg-1">
+                            <input type="search" placeholder="Search" class="search form-control">
+                        </button>
+                        <button class="btn delete-all-btn btn-outline-danger">
+                            <i class="">Delete All</i>
+                        </button>
+                        <button class="btn btn-outline-primary add-btn m-lg-1" data-bs-toggle="modal" data-bs-target="#ModalId">
+                            <i class="">Add New</i>
+                        </button>
+                    </div>
+
+                    <div class="row mt-md-4">
+                        <div class="col-md-12">
+                            <table class="table text-md-center">
+                                <thead>
+                                    <tr>
+                                        <th>Sr</th>
+                                        <th>Profile</th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Nambar</th>
+                                        <th>DOB</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="Data-list">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="ModalId">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="fw-bolder text-center">Add New Eamployye</h4>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="register-form">
+                            <div class="input-group mb-3">
+                                <span class="fw-medium input-group-text">Name</span>
+                                <input type="text" required class="form-control">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="fw-medium input-group-text">Email</span>
+                                <input type="email" required class="form-control">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="fw-medium input-group-text">Numbar</span>
+                                <input type="number" required class="form-control">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="fw-medium input-group-text">DOB</span>
+                                <input type="date" required class="form-control">
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="fw-medium input-group-text">Password</span>
+                                <input type="password" required class="form-control">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="file" required class="form-control">
+                            </div>
+                            <div class="w-100 d-flex justify-content-end align-items-center mb-3">
+                                <button type="submit" class="btn fw-bold btn-outline-success mx-1">Submit</button>
+                                <button  type="button" class="btn fw-bold btn-outline-secondary">Update</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Js/index.js"></script>
+
+    <!--Bootstrap Link  -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
